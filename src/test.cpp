@@ -18,6 +18,10 @@ int main()
 
 	robot = bodyloader.load(model_path.c_str());
 
-	std::cout << robot->rootLink()->p() << std::endl;
+	std::string joint_name[robot->numJoints()];
+	for(std::size_t index=0;index<robot->numJoints();index++){
+		joint_name[index] = robot->link(index)->name();
+		std::cout << joint_name[index] << std::endl;
+	}
 	return 0;
 }
