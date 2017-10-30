@@ -11,6 +11,6 @@ pkg_check_modules(CHOREONOID REQUIRED choreonoid-body-plugin)
 include_directories(${CHOREONOID_INCLUDE_DIRS})
 link_directories(${CHOREONOID_LIBRARY_DIRS})
 
-add_executable(model test.cpp)
+add_executable(model test.cpp Link.cpp)
 
 target_link_libraries(model ${CHOREONOID_LIBRARIES})

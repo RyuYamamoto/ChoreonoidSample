@@ -25,6 +25,9 @@ int main()
 		ulink[index].w = robot->link(index)->w();
 		ulink[index].v = robot->link(index)->v();
 		ulink[index].m = robot->link(index)->m();
+		//ulink[index].parent = robot->link(index)->parent();
+		//ulink[index].child = robot->link(index)->child();
+		//ulink[index].sister = robot->link(index)->sibling();
 	}
 	return 0;
 }
