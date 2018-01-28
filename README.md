@@ -1,2 +1,2 @@
-## VRML Model Loader Sample
+# Choreonoid Sample
 - using chorenoid library.  
