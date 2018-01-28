@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(model)
+project(get_link_info)
 
 include(FindPkgConfig)
 include(CheckIncludeFiles)
@@ -11,6 +11,6 @@ pkg_check_modules(CHOREONOID REQUIRED choreonoid-body-plugin)
 include_directories(${CHOREONOID_INCLUDE_DIRS})
 link_directories(${CHOREONOID_LIBRARY_DIRS})
 
-add_executable(model test.cpp Link.cpp)
+add_executable(get_link_info get_link_info.cpp)
 
-target_link_libraries(model ${CHOREONOID_LIBRARIES})
+target_link_libraries(get_link_info ${CHOREONOID_LIBRARIES})
