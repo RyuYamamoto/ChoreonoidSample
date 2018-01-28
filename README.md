@@ -1,5 +1,5 @@
 Choreonoid Sample Code  
-[![Build Status](https://travis-ci.org/RyuYamamoto/ChoreonoidSample.png?branch=master)](https://travis-ci.org/ChoreonoidSample) 
+[![Build Status](https://travis-ci.org/RyuYamamoto/ChoreonoidSample.png?branch=master)](https://travis-ci.org/RyuYamamoto/ChoreonoidSample) 
 ==========
 
 Sample code of choreonoid library.  
