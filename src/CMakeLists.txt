@@ -16,3 +16,6 @@ target_link_libraries(get_link_info ${CHOREONOID_LIBRARIES})
 
 add_executable(kinematics kinematics.cpp)
 target_link_libraries(kinematics ${CHOREONOID_LIBRARIES})
+
+add_executable(com_jacobian com_jacobian.cpp)
+target_link_libraries(com_jacobian ${CHOREONOID_LIBRARIES})
