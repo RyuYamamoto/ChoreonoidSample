@@ -5,6 +5,7 @@
 #include <cnoid/JointPath>
 #include <cnoid/Jacobian>
 #include <cnoid/BodyLoader>
+#include <cnoid/Link>
 
 using namespace std;
 using namespace cnoid;
@@ -17,6 +18,8 @@ int main()
 	BodyPtr robot = bodyloader.load(model_path.c_str());
 
 	JointPathPtr leg = getCustomJointPath(robot, robot->link("RLEG_ANKLE_R"), robot->link("LLEG_ANKLE_R"));
+
+	robot->calcForwardKinematics();
 
 	MatrixXd J_com(3, robot->numJoints());
 	calcCMJacobian(robot, leg->baseLink(), J_com);
