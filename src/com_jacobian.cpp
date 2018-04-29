@@ -21,6 +21,8 @@ int main()
 
 	robot->calcForwardKinematics();
 
+	robot->calcCenterOfMass();
+
 	MatrixXd J_com(3, robot->numJoints());
 	calcCMJacobian(robot, leg->baseLink(), J_com);
 
