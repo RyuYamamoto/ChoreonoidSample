@@ -48,7 +48,7 @@ public:
 
 		BodyPtr robot = bodyItems[0]->body();
 
-		JointPathPtr leg = getCustomJointPath(robot, robot->link("RLEG_ANKLE_R"), robot->link("LLEG_ANKLE_R"));
+		JointPathPtr leg = getCustomJointPath(robot, robot->link("RLEG_ANKLE_R"), robot->link("WAIST"));
 
 		// 順運動学でリンクの位置姿勢更新
 		robot->calcForwardKinematics();
